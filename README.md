@@ -12,7 +12,7 @@ A modern and responsive tavern website designed to showcase food, drinks, events
 
 ## Demo Video
 
-[▶ Watch Tavern Website Demo](./Entertainment/20260502-0838-34.6501041%5B1%5D.mp4)
+[▶ Watch Tavern Website Demo](./Entertainment/20260502-0838-34.6501041[1].mp4)
 
 ## Technologies Used
 
