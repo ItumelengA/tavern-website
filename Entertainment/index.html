@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>BONIE'S Tavern | Entertainment</title>
+</head>
+
+<body>
+    <nav class="tavern-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="MGG Logo">
+                <span>BONIE'S <b>TAVERN</b></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findUs.html">Find Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home-page">
+        <div class="image-container">
+            <img src="images/home-background.jpg" alt="MGG Tavern Night Life">
+            <div class="hero-content">
+                <h1 class="image-text">WHERE THE <span>NIGHT</span><br>COMES ALIVE</h1>
+                <p class="operation-times">🕕 6PM - 6AM</p>
+                <div class="hero-cta">
+                    <a href="events.html" class="btn btn-secondary">View Events</a>            
+            </div>
+            <p class="image-footer">18+ ONLY | DON'T DRINK AND DRIVE | TAUNG-MAGOGONG MODUTUNG | NORTH WEST</p>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.onclick = () => {
+            navLinks.classList.toggle('show');
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.onclick = () => navLinks.classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>

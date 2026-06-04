@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONIE'S Tavern | Gallery </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <nav class="tavern-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Logo">
+                <span>BONIE'S <b>TAVERN</b></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findUs.html">Find Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="gallery-section">
+        <h2>PAST EVENTS AT MGG</h2>
+        <p class="gallery-sub">If you know, you know. Pull up next time.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/club-images/club-img1.jpeg" alt="MGG Tavern Event" loading="lazy">
+                <span class="event-badge">3 FEB 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img2.jpeg" alt="MGG Tavern Crowd" loading="lazy">
+                <span class="event-badge">3 FEB 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img3.jpeg" alt="DJ at MGG Tavern" loading="lazy">
+                <span class="event-badge">12 MAR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img4.jpeg" alt="MGG Tavern Vibes" loading="lazy">
+                <span class="event-badge">12 MAR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img5.jpeg" alt="MGG Tavern Party" loading="lazy">
+                <span class="event-badge">26 APR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img6.jpeg" alt="MGG Tavern Night" loading="lazy">
+                <span class="event-badge">26 APR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img7.jpeg" alt="MGG Tavern Night" loading="lazy">
+                <span class="event-badge">26 APR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img8.jpeg" alt="MGG Tavern Night" loading="lazy">
+                <span class="event-badge">26 APR 2026</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/club-images/club-img9.jpeg" alt="MGG Tavern Night" loading="lazy">
+                <span class="event-badge">26 APR 2026</span>
+            </div>
+
+            <!-- If owner only has 6 pics, add empty slots: -->
+            <div class="gallery-item empty"></div>
+            <div class="gallery-item empty"></div>
+            <div class="gallery-item empty"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal - Click to enlarge -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script>
+        document.getElementById('menuToggle').onclick = () => {
+            document.getElementById('navLinks').classList.toggle('show');
+        }
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const closeBtn = document.querySelector('.close-lightbox');
+
+        galleryItems.forEach(img => {
+            img.onclick = () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            }
+        });
+
+        closeBtn.onclick = () => lightbox.style.display = 'none';
+        lightbox.onclick = (e) => {
+            if (e.target === lightbox) lightbox.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

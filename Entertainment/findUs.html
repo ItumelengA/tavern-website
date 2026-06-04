@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONIE'S Tavern | Find Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <nav class="tavern-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Logo">
+                <span>BONIE'S <b>TAVERN</b></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findUs.html">Find Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="findus-hero">
+        <div class="particles"></div>
+
+        <div class="findus-container">
+            <!-- LEFT: Glass Card -->
+            <div class="findus-card">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <span class="live-badge"><span class="live-dot"></span> OPEN NOW</span>
+
+                    <h2>WHERE TO<br><span class="text-orange">PULL UP</span></h2>
+
+                    <p class="tagline">
+                        MGG Tavern • Taung Magogong, Modutung<br>
+                        Premium sound. Ice cold drinks. Local DJs till sunrise.
+                    </p>
+
+                    <div class="info-grid">
+                        <a href="tel:+271236587412" class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <span class="info-label">CALL</span>
+                                <span class="info-value">+27 123 658 7412</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/27637142758?text=Hi%20MGG" target="_blank" class="info-item">
+                            <div class="info-icon">💬</div>
+                            <div>
+                                <span class="info-label">WHATSAPP</span>
+                                <span class="info-value">0637142758</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:mggtavern@gmail.com" class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <span class="info-label">EMAIL</span>
+                                <span class="info-value">bonie'stavern@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div>
+                                <span class="info-label">TRADING HOURS</span>
+                                <span class="info-value">8PM - TILL LATE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-row">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-27.6801368, 24.8212444" target="_blank"
+                            class="btn-primary">
+                            <span>GET DIRECTIONS</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="tel:+271236587412" class="btn-secondary">CALL NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Features + Map -->
+            <div class="findus-right">
+                <div class="features-grid">
+                    <div class="feature-tile">
+                        <div class="tile-icon">🍺</div>
+                        <h3>ICE COLD</h3>
+                        <p>Castle to Corona</p>
+                    </div>
+                    <div class="feature-tile">
+                        <div class="tile-icon">🎧</div>
+                        <h3>DOPE DJS</h3>
+                        <p>Local legends</p>
+                    </div>
+                    <div class="feature-tile">
+                        <div class="tile-icon">🔊</div>
+                        <h3>BIG SOUND</h3>
+                        <p>Feel the bass</p>
+                    </div>
+                    <div class="feature-tile">
+                        <div class="tile-icon">🅿️</div>
+                        <h3>SAFE PARK</h3>
+                        <p>Well-lit & secure</p>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1777589958366!6m8!1m7!1sDS1aBgEVqnKp3rgjoS-pxw!2m2!1d-27.68015288258668!2d24.82089179968856!3f80.1619804352062!4f0.2288891673830733!5f0.7820865974627469"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('menuToggle').onclick = () => {
+            document.getElementById('navLinks').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

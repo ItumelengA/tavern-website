@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONIE'S Tavern | Events </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <nav class="tavern-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Logo">
+                <span>BONIE'S <b>TAVERN</b></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findUs.html">Find Us</a></li>
+            </ul>
+        </div>
+    </nav>
+<section class="upcoming-events" style="background-image: url('images/club-images/club-img3.jpeg');">
+    <div class="events-overlay">
+        <div class="glow-orb"></div>
+        <div class="glow-orb orb2"></div>
+        
+        <h2 class="hero-title">
+            <span class="title-small">NEXT AT MGG</span>
+            <span class="title-main">SATURDAY GROOVE</span>
+        </h2>
+        
+        <div class="single-poster-wrap">
+            <div class="poster-card featured">
+                <div class="poster-badge">
+                    <span class="live-dot"></span> THIS SATURDAY
+                </div>
+                <img src="images/club-images/club-img3.jpeg" alt="Saturday Groove 3 May" class="event-poster">
+                <div class="poster-glow"></div>
+                <div class="poster-info">
+                    <div class="info-row">
+                        <span class="info-label">📅 DATE</span>
+                        <span class="info-value">3 MAY 2025</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">⏰ TIME</span>
+                        <span class="info-value">8PM TILL LATE</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🎤 HOST</span>
+                        <span class="info-value">FLAQ</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">💰 ENTRY</span>
+                        <span class="info-value">R20 • FREE B4 9PM</span>
+                    </div>
+                    
+                    <a href="https://wa.me/27637142758?text=need%20a%20ticket%20for%20Saturday%20Groove" class="btn-book">
+                        <span>GET TICKET(S)</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="event-contact">
+            MGG Tavern, 8575 Modutung • <a href="tel:0791234567">079 123 4567</a> • <a href="https://www.google.com/maps/dir/?api=1&destination=-27.6801368, 24.8212444">GET DIRECTIONS</a>
+        </p>
+    </div>
+</section>
+
+
+    <script>
+        document.getElementById('menuToggle').onclick = () => {
+            document.getElementById('navLinks').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
