@@ -7,3 +7,5 @@ Features
 * Featured drinks and food items
 * Contact and location information
 * Fast-loading static website hosted on GitHub Pages
+
+[![Watch Demo](images/homepage-preview.png)](demo/tavern-demo.mp4)
